@@ -8,11 +8,143 @@
     <!-- tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- couste color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        mycolor: '#B68C5A'
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 
-<body>
+<body class="bg-white">
+    <header class="container lg:w-3/4 mx-auto py-5">
 
+        <!-- navbar section  -->
+
+        <section class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>Services</a>
+                            <ul class="p-2">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Cases</a>
+                            <ul class="p-2">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Blog</a>
+                            <ul class="p-2">
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Contact Us</a>
+                            <ul class="p-2">
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <img class="max-w-28" src="images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                        <details>
+                            <summary>Services</summary>
+                            <ul class="p-2">
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Cases</summary>
+                            <ul class="p-2">
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Blog</summary>
+                            <ul class="p-2">
+
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>Contact Us</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-mycolor text-white border-none hover:bg-mycolor">Free Consultation</a>
+            </div>
+        </section>
+
+        <!-- banar section  -->
+        <section>
+            <div class="hero my-10 py-20" style="background-image: url(./images/banner.png);">
+                <!-- <div class="hero-overlay"></div> -->
+                <div class="hero-content text-center text-neutral-content text-white">
+                    <div class="max-w-lg">
+                        <h1 class="mb-5 text-5xl font-bold">
+                            We Provide Effective <br>
+                            Legal Solutions
+                        </h1>
+                        <p class="mb-5">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <input class="py-3 px-5 w-[300px] rounded-lg bg-white border-none" type="text"
+                            placeholder="Search your services">
+                        <button
+                            class="btn btn-primary bg-mycolor hover:bg-mycolor border-none text-white px-10">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
